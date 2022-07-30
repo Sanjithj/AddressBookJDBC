@@ -29,7 +29,7 @@ public class AddressBook {
 	                    AddressBookService.addContact(addressBook);
 	                    break;
 	                case "3":
-	                    AddressBookService.display();
+	                    AddressBookService.displayByOrder();
 	                    break;
 	                case "4":
 	                    AddressBookService.editContact();
