@@ -10,4 +10,8 @@ public class AddressBook {
 	        AddressBookService.display();
 	        AddressBookService.editContact();
 	}
+
+	private static void addContact() {
+		
+	}
 }

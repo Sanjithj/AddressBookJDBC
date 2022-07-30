@@ -62,5 +62,37 @@ public class AddressBookService {
 	            addContact();
 	        }
 	    }
-
+	    
+	    private static int deleteContact(String delName)
+        {
+            for (Contacts con : arrayOfContacts) {
+                if (delName.compareToIgnoreCase(con.getFirstName()) == 0) {
+                    return arrayOfContacts.indexOf(con);
+                }
+            }
+            return -1;
+        }
+        public static void deleteContact()
+        {
+            System.out.println("Enter the name you want to delete.");
+            String delName = sc.next();
+            int ans = deleteContact(delName);
+            if(ans == -1)
+            {
+                System.out.println("Contact with name "+delName+" not found");
+            }
+            else {
+                System.out.println("Details of name : "+delName+" have been deleted");
+                arrayOfContacts.clear();
+                if(arrayOfContacts.isEmpty())
+                {
+                    System.out.println("No new contacts");
+                }
+                else {
+                    for (Contacts c:arrayOfContacts) {
+                        System.out.println(c);
+                    	}
+                	}
+            	}
+        	}
 }
