@@ -22,7 +22,6 @@ public class Contacts {
 		     this.email = email_id;
 		}
 
-
 		public String getFirstName() {
 			
 			return null;
