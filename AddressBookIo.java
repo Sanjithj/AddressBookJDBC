@@ -7,11 +7,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import com.google.gson.Gson;
 import com.opencsv.CSVWriter;
 
 public class AddressBookIo {
 	
-	
+	 static Gson gson = new Gson();
 	    static File file = new File("AddressBook.csv");
 	    public static  void writeIntoFile() throws IOException{
 	        FileWriter fileWriter = new FileWriter(file);

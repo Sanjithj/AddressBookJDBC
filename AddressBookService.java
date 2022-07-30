@@ -14,7 +14,6 @@ public class AddressBookService {
 	
 	public static Scanner sc = new Scanner(System.in);
 	  public static ArrayList<Contacts> arrayOfContacts;
-	  
 	    public static HashMap<String, ArrayList<Contacts>> hashMapOfAddressBooks = new HashMap<>();
 
 	    public static HashMap<String,String> dictionaryForState = new HashMap<String,String>();
