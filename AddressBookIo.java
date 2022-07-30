@@ -16,11 +16,18 @@ public class AddressBookIo {
         String[] strContacts = new String[40];
         List<String[]> contacts = new ArrayList<>();
         AddressBookService.hashMapOfAddressBooks.entrySet().stream().forEach(n->
-              
+        {
+        	  try {
+                fileWriter.write(n.getKey()+n.getValue());
+              } catch (IOException e) {
+                  throw new RuntimeException(e);
+              }
+        
                         strContacts[0] = n.getKey();
                         strContacts[1] = n.getValue().toString();
                     contacts.add(strContacts);
-     
+        	  }
+        	  );
         fileWriter.close();
         System.out.println("--Data Inserted--");
     }
