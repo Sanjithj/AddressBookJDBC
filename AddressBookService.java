@@ -11,6 +11,7 @@ interface ICheckDuplicate{
     boolean checkDuplicate(String f_name,String l_name);
 }
 public class AddressBookService {
+	
 	public static Scanner sc = new Scanner(System.in);
 	  public static ArrayList<Contacts> arrayOfContacts;
 	  
