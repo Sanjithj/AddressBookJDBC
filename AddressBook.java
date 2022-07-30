@@ -12,7 +12,7 @@ public class AddressBook {
 	        System.out.println();
 	        String option;
 	        while(true) {
-	            System.out.println("**Menu Driven***");
+	            System.out.println("***Menu Driven***");
 	            System.out.println(" 1. Add Address Book\n 2. Add contacts\n 3. Display contacts\n 4. Edit contact\n 5. Delete Contact\n 6. Find Contacts with same state\n 7. Find Contacts with same city\n8. Exit");
 	            option = sc.next();
 

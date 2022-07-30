@@ -26,7 +26,6 @@ public class Contacts {
     public String getFirstName() {
         return firstName;
     }
-
     public Contacts(String first_name, String last_name, String address, String city, String state, int zip, long phone, String email_id) {
         this.firstName = first_name;
         this.lastName = last_name;
