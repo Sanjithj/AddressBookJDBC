@@ -71,7 +71,20 @@ public class AddressBookService {
         hashMapOfAddressBooks.put(bookName,arrayOfContacts);
 
     }
-
+    public static Contacts addContact() {
+		System.out.println("how many contact you want to add");
+		int n=sc.nextInt();
+		for(int i=0;i<n;i++) {
+			Contacts con=addContact();
+			if(!arrayOfContacts.add(con)) {
+				System.out.println("name already exists");
+				i--;
+				continue;
+			}
+			System.out.println();
+		}
+		return null;
+    }
     public static void display() {
         System.out.println(" Please enter the name of the address book: ");
         String name = sc.next();
