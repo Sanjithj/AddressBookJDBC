@@ -14,7 +14,7 @@ public class AddressBook {
 	        String option;
 	        while(true) {
 	            System.out.println("***Menu Driven***");
-	            System.out.println(" 1. Add Address Book\n 2. Add contacts\n 3. Display contacts\n 4. Edit contact\n 5. Delete Contact\n 6. Find Contacts with same state\n 7. Find Contacts with same city\n8. Exit");
+	            System.out.println(" 1. Add Address Book\n 2. Add contacts\n 3. Display contacts\n 4. Edit contact\n 5. Delete Contact\n 6. Find Contacts with same state\n 7. Find Contacts with same city\n8.Display conatact\n9. Exit");
 	            option = sc.next();
 
 	            switch (option) {
@@ -48,6 +48,9 @@ public class AddressBook {
 	                    AddressBookService.findSameCityContacts(city);
 	                    break;
 	                case "8":
+	                    AddressBookService.displayByOrder();
+	                    break;
+	                case "9":
 	                    System.out.println("Thank You!");
 	                    return;
 	                default:
