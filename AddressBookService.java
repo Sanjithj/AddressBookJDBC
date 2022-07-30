@@ -194,4 +194,32 @@ public class AddressBookService {
         }
         System.out.println("Total number of people with city "+city+" are:"+count);
     }
+    public static void sortByCity()
+    {
+        System.out.println("Sorted by city names:");
+        hashMapOfAddressBooks.values().forEach((n)->{
+            n.stream().sorted((contact1,contact2) -> {
+              return contact1.getCity().compareToIgnoreCase(contact2.getCity());
+            }).forEach(n1-> System.out.println(n1));
+        });
+    }
+    public static void sortByState()
+    {
+        System.out.println("Sorted by state names:");
+        hashMapOfAddressBooks.values().forEach((n)->{
+            n.stream().sorted((contact1,contact2) -> {
+                return contact1.getState().compareToIgnoreCase(contact2.getState());
+            }).forEach(n1-> System.out.println(n1));
+        });
+    }
+    public static void sortByZip()
+    {
+        System.out.println("Sorted by city names:");
+        hashMapOfAddressBooks.values().forEach((n)->{
+            n.stream().sorted((contact1,contact2) -> {
+                return contact1.getZip()==(contact2.getZip())?0:1;
+            }).forEach(n1-> System.out.println(n1));
+        });
+}
+
 }
