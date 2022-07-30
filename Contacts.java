@@ -23,6 +23,10 @@ public class Contacts {
 		}
 
 
+		public String getFirstName() {
+			
+			return null;
+		}
 		@Override
 	    public String toString()
 	    {
@@ -30,9 +34,4 @@ public class Contacts {
 	                "\nState is: "+state+"\nZip is: "+zip+"\nPhone Number is: "+phone+"\nEmail Id is: "+email;
 	    }
 
-
-		public String getFirstName() {
-			
-			return null;
-		}
 }

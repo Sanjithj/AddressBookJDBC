@@ -31,8 +31,8 @@ public class AddressBookService {
 	    }
 	    public static void display()
 	    {
-	        for (Contacts c:arrayOfContacts) {
-	            System.out.println(c);
+	        for (Contacts con:arrayOfContacts) {
+	            System.out.println(con);
 	        }
 	    }
 
@@ -89,8 +89,8 @@ public class AddressBookService {
                     System.out.println("No new contacts");
                 }
                 else {
-                    for (Contacts c:arrayOfContacts) {
-                        System.out.println(c);
+                    for (Contacts con:arrayOfContacts) {
+                        System.out.println(con);
                     	}
                 	}
             	}
